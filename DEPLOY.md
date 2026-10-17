@@ -23,10 +23,17 @@
 3. Запушь проект. В PowerShell из папки `D:\SpruceLauncher`:
 
 ```powershell
+# один раз укажи своё имя/почту для коммитов (желательно та же почта, что на GitHub)
+git config --global user.name "Твоё Имя"
+git config --global user.email "твоя_почта@example.com"
+
+# переподпиши первый коммит своим именем
+git commit --amend --reset-author --no-edit
+
+# подключи репозиторий (замени ЛОГИН на свой) и запушь
+git remote add origin https://github.com/ЛОГИН/SpruceLauncher.git
 git push -u origin main
 ```
-
-(репозиторий уже инициализирован и закоммичен; команду `git remote add origin https://github.com/ТВОЙ_ЛОГИН/SpruceLauncher.git` нужно выполнить один раз перед пушем)
 
 При первом пуше Git попросит войти в GitHub — откроется окно браузера, подтверди.
 
