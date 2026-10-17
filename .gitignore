@@ -1,0 +1,38 @@
+# Зависимости
+node_modules/
+
+# Сборки
+dist/
+target/
+*.jar
+
+# Секреты и локальная конфигурация
+.env
+*.local
+.env.production
+
+# Локальные данные разработки
+server/.devdata/
+*.log
+
+# Скриншоты и отчёты тестов
+web/screenshots/
+playwright-report/
+test-results/
+
+# Приватные данные (клиенты, эксперименты)
+merge/
+merge-clean/
+untitled/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Java
+*.class
+hs_err_pid*

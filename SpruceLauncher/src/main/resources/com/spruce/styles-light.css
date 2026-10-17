@@ -1,0 +1,48 @@
+/* =====================================================
+   SpruceLauncher — light theme overrides for popups
+   (popup windows do not inherit root style classes,
+   so these rules are loaded/unloaded per theme)
+   ===================================================== */
+
+.combo-box-popup .list-view {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: rgba(30, 143, 66, 0.30);
+    -fx-background-radius: 8;
+}
+
+.combo-box-popup .list-cell {
+    -fx-text-fill: #1B2A1F;
+    -fx-background-color: #FFFFFF;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: rgba(30, 143, 66, 0.10);
+}
+
+.app-menu {
+    -fx-background-color: rgba(255, 255, 255, 0.98);
+    -fx-border-color: rgba(30, 143, 66, 0.30);
+    -fx-effect: dropshadow(gaussian, rgba(20, 40, 25, 0.25), 24, 0.16, 0, 8);
+}
+
+.app-menu .menu-item .label {
+    -fx-text-fill: #1B2A1F;
+}
+
+.app-menu .menu-item:focused {
+    -fx-background-color: rgba(30, 143, 66, 0.13);
+}
+
+.app-menu .menu-item:focused .label {
+    -fx-text-fill: #14522A;
+}
+
+.app-menu .separator .line {
+    -fx-border-color: rgba(30, 143, 66, 0.20);
+}
+
+.tooltip {
+    -fx-background-color: rgba(255, 255, 255, 0.98);
+    -fx-text-fill: #1B2A1F;
+    -fx-border-color: rgba(30, 143, 66, 0.30);
+}

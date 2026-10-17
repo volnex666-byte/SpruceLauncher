@@ -1,0 +1,25 @@
+{
+  "name": "sprucelauncher-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "postbuild": "node scripts/postbuild.mjs",
+    "preview": "vite preview",
+    "shot": "node scripts/shot.mjs"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.10",
+    "@vitejs/plugin-react": "^4.5.2",
+    "playwright": "^1.53.0",
+    "tailwindcss": "^4.1.10",
+    "vite": "^6.3.5"
+  }
+}

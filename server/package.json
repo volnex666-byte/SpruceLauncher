@@ -1,0 +1,27 @@
+{
+  "name": "sprucelauncher-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.mjs",
+    "dev": "node --watch src/index.mjs",
+    "migrate": "node scripts/migrate.mjs",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.2.17",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "ioredis": "^5.4.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.10.0",
+    "pg": "^8.13.1",
+    "zod": "^3.24.1"
+  }
+}
